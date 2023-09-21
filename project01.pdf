@@ -1,0 +1,234 @@
+became a root user
+# sudo su -
+
+create working directory
+command:
+
+# mkdir myproject
+
+Go inside the directory
+command:
+
+# cd myproject
+
+create empty files
+
+# touch file1.java file2.jav
+
+Create a local repository
+
+# git init
+
+git configurations:
+
+git config --global user.name sindhu
+
+git config --global user.email sindhu13501@gmail.com
+
+Adding a file to Local repo
+
+# git status
+
+# git add .
+
+# git status
+
+# git commit -m "added file file1 and file2"
+
+Make changes in the file--> add some content in the file
+Edit the file
+command:
+
+# nano file1.java
+
+insert this is my first file 
+Press CTL x
+press y
+press enter 
+
+# git status
+
+# nano file1.java
+
+insert this is my first file 
+Press CTL x
+press y
+press enter 
+
+# git status
+
+# git log
+
+# git log --oneline
+
+# git status
+
+filename to be deleted:
+
+# git commit -a -m "modified file"
+
+# git log 
+
+# git log --oneline
+
+#git ls-files
+
+# ls
+
+# git rm file1.java
+
+# ls
+
+# git ls-files
+
+# git status
+
+Commit the deletion of file:
+
+# git commit -m "deletion of file"
+
+# git log --oneline
+
+Revert command:
+
+# git log --oneline
+
+# git revert 9883746
+
+enter
+
+open nano editor file 
+
+insert .... 
+
+# ls
+
+# git ls-files
+
+# ls
+
+Ignored files  Files will be present in the Working directory:
+
+# touch file.txt file2.xml file3.log file4.class
+
+# git status
+
+# nano .gitignore
+
+insert 
+*.txt
+*.log
+*.xml
+*.class
+
+Save the file and exit
+
+ Check the status now and commit .gitignore file:
+ 
+# git status
+# git add .
+# git commit -m "added .gitignore"
+
+# git log --oneline
+
+# ls
+
+ generate SSH keys:
+
+# cd
+# ssh-keygen
+
+# cat /root/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwtOi5QXKZS2fJW39wWtWdMVY4xLX3/9eZDXmRbZzERCrToumrWFiGIYWc6i/
+e9i8mBmKd5mXkdO72UPNH1GOYMQeqEw60p1T2KUjWbNBmFLeJQucdWFhn7ZPLnlypjSJmcca1qCll//IpKGeUYq6jpKtv64yvX1W67c/Co7UFoVSuMqwCJBNl0KCsno1IZS4ebFiVM7ItG4rVAiJoM9YB27s/
+lQmSvXAG0xt+JKspAG3aH/4B/oBWWTQnwZU542FtbZkS+qGneR59vcEhRVwolmr4ew5lSlblxiamDs+6oxZhMQyALhKgvTmLtv3yr0wiCYEvxgXnxaBCTPXRGN5D root@ip-172-31-22-124
+
+paste on github
+
+Pull command:
+
+# studo su -
+
+# cd assistedproject
+
+# git ls-files
+
+# git pull origin master
+
+# ls
+
+# git ls-files
+
+# git log --oneline
+
+# git ls-files
+
+# ls
+
+Fetch command:
+
+# git status
+
+# git branch
+
+# git branch feature1
+
+# git checkout feature1
+
+# git branch 
+
+# git status
+
+# touch feature1file featurefile2
+
+# git add .
+
+# git commit -m "done on feature1"
+
+# git log --oneline
+
+# git checkout master
+
+# git log --oneline
+
+# ls
+
+# git merge feature1 master
+
+# git branch -d fetaure1
+
+# git log --oneline
+
+# git reset --hard9569296
+
+# git status
+
+# git add .
+
+# git commit -m "done"
+
+Rebase Command: 
+
+# git branch
+
+#  git checkout -b feature1
+
+# touch file-feature
+ 
+# git add .
+  
+# git commit -m "done on feature"
+
+# git checkout master
+
+# touch file-master
+
+# git add .
+  
+# git commit -m "done on master"
+
+# git rebase master
+
+# git log --oneline
+
